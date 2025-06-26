@@ -1,0 +1,77 @@
+<html>
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+    <div class="container-fluid">
+        <h2 style="padding-right: 5%;">Dealerships</h2>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-size: larger;" href="/about">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" style="font-size: larger;" href="/contact">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="card" style="width: 80%;margin: auto; margin-top:5%;">
+    <div class="banner" name="contact-header">
+        <h1 style="text-align: center; padding: 20px;">Contact Our Dealership</h1>
+    </div>
+    <div style="padding: 20px;">
+        <p>Have questions or ready to find your next car? Reach out to us through any of the methods below. We're here to help!</p>
+
+        <h3>Our Location</h3>
+        <p>123 Auto Lane, Car City, AA 12345</p>
+
+        <h3>Phone</h3>
+        <p>Main Line: (555) 123-4567</p>
+        <p>Sales: (555) 123-4568</p>
+        <p>Service: (555) 123-4569</p>
+
+        <h3>Email</h3>
+        <p>General Inquiries: <a href="mailto:info@exampledealership.com">info@exampledealership.com</a></p>
+        <p>Sales: <a href="mailto:sales@exampledealership.com">sales@exampledealership.com</a></p>
+        <p>Service: <a href="mailto:service@exampledealership.com">service@exampledealership.com</a></p>
+
+        <h3>Business Hours</h3>
+        <p>Monday - Friday: 9:00 AM - 7:00 PM</p>
+        <p>Saturday: 10:00 AM - 5:00 PM</p>
+        <p>Sunday: Closed</p>
+
+        <h3>Send Us a Message</h3>
+        <form action="/submit_contact_form" method="POST">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="subject" class="form-label">Subject:</label>
+                <input type="text" class="form-control" id="subject" name="subject">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message:</label>
+                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
