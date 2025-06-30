@@ -1,0 +1,23 @@
+{
+  "esversion": 8,
+  "node": true,
+  "strict": false,
+  "globalstrict": false,
+  "undef": true,
+  "unused": true,
+  "latedef": "nofunc",
+  "nonew": true,
+  "trailing": true,
+  "maxlen": 120,
+  "predef": [
+    "console",
+    "module",
+    "require",
+    "exports",
+    "__dirname",
+    "__filename",
+    "process",
+    "global",
+    "Buffer"
+  ]
+} 
